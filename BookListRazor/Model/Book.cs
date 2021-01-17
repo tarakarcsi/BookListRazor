@@ -11,7 +11,7 @@ namespace BookListRazor.Model
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Kötelező mező!")]
         [Display(Name = "Book name")]
         public string Name { get; set; }
 
